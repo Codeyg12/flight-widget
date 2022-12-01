@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: hsl(0, 0%, 94%);
+    font-size: 35px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: hsl(35, 94%, 74%);
+}
+
+h1 {
+    padding: 10px;
+}
+
+.departures {
+    background-color: hsl(0, 0%, 2%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.departures table {
+    background-color: hsl(0, 0%, 18%);
+    text-align: left;
+}
+
+.departures table div {
+    border: solid 4px hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 0%);
+    min-width: 20px;
+    height: 40px;
+    float: left;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+#time {
+    width: 180px;
+}
+
+#destination {
+    width: 700px;
+}
+
+#flight {
+    width: 205px;
+}
+
+#gate {
+    width: 135px;
+}
+
+#remarks {
+    width: 260px;
+}
